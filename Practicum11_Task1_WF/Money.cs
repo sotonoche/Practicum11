@@ -27,14 +27,12 @@ namespace Practicum11_Task1_WF
 
         public string isEnoughMoney(int sum)
         {
-            if (first * second >= sum) return "Денежной суммы хватит на покупку товара";
-            else return "Денежной суммы не хватит на покупку товара";
+            if (first * second >= sum) return "Бюджета хватит на покупку товара";
+            else return "Бюджета не хватит на покупку товара";
         }
 
-        public string quantityOfGoods(int price)
+        public string quantityOfGoods(int price, int sum)
         {
-            int sum = first * second;
-
             if (sum >= price)
             {
                 return $"Можно приобрести {sum / price} шт. товара";

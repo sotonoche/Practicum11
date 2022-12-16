@@ -21,7 +21,7 @@ namespace Practicum11
                     value = int.Parse(Console.ReadLine());
                     Console.Write("Введите сумму закупки товара: ");
                     sum = int.Parse(Console.ReadLine());
-                    Console.Write("Введите стоимость товара: ");
+                    Console.Write("Введите стоимость 1 штуки товара: ");
                     price = int.Parse(Console.ReadLine());
                     if (nomination <= 0 || value <= 0 || sum <= 0 || price <= 0) throw new Exception("Значение не может быть меньше или равно нулю!");
                     break;
@@ -42,7 +42,7 @@ namespace Practicum11
             Console.WriteLine("------------------------------------------------------------");
             money.isEnoughMoney(sum);
             Console.WriteLine("------------------------------------------------------------");
-            money.quantityOfGoods(price);
+            money.quantityOfGoods(price, sum);
             Console.WriteLine("------------------------------------------------------------");
             while (true)
             {

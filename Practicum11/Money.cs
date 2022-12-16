@@ -24,14 +24,12 @@ namespace Practicum11
 
         public void isEnoughMoney(int sum)
         {
-            if (first * second >= sum) Console.WriteLine("Денежной суммы хватит на покупку товара");
-            else Console.WriteLine("Денежной суммы не хватит на покупку товара");
+            if (first * second >= sum) Console.WriteLine("Бюджета хватит на покупку товара");
+            else Console.WriteLine("Бюджета не хватит на покупку товара");
         }
 
-        public void quantityOfGoods(int price)
-        {
-            int sum = first * second;
-            
+        public void quantityOfGoods(int price, int sum)
+        {   
             if (sum >= price)
             {
                 Console.WriteLine($"Можно приобрести {sum/price} шт. товара");

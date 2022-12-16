@@ -22,7 +22,7 @@ namespace Practicum11_Task1_WF
 
         private void button3_Click(object sender, EventArgs e)
         {
-            textBox2.Text = money.quantityOfGoods(price);
+            textBox2.Text = money.quantityOfGoods(price, sum);
         }
 
         private void button5_Click(object sender, EventArgs e)
